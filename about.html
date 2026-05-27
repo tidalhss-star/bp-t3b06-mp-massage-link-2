@@ -3,129 +3,389 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오시는 길 & 가격 정보 | 마포 마사지 상세 매뉴얼</title>
-  <meta name="description" content="형이 이 마사지 정보 큐레이션을 시작하게 된 스토리는 진짜 눈물 없이 들을 수 없다. 나도 한때는 야근에 찌든 평범한 직장인이었는데, 마포 역세권 근처에서 힐링 좀 해보겠다고 퇴근하고 마사지 샵 문을 두드렸다가 내상 입고 나온 날이 한두 번이 아니었음. 마사지는 커녕 ...">
+  <title>마포 마사지 상세정보 및 이용절차 | 마포 마사지 링크</title>
+  <meta name="description" content="마포역 로컬 먹자 상권 직장인들의 만성 피로와 어깨 통증을 부드럽게 케어해주는 스웨디시 정통 마사지 링크. 위치 시그널과 정찰 가격 안내 수록.">
+  <meta name="keywords" content="마포 마사지 링크, 마포 마사지 위치, 마포 마사지 가격, 마포 마사지 시스템">
   <link rel="canonical" href="https://t3b06-mp-massage-link-2.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="editorial-luxury">
-  <meta name="bpaas-design-theme" content="kr-editorial-luxury">
+  <meta name="bpaas-design-system" content="midnight-glass">
+  <meta name="bpaas-design-theme" content="kr-t3b06-mp-massage-link-2">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     
-      :root {
-        --bg: #faf9f6;
-        --fg: #1c1c1e;
-        --accent: #8a7355;
-        --muted: #6e6e73;
-        --border: #e5e5e0;
+    :root {
+      --bg-dark: #022c22;
+      --bg-card: rgba(255, 255, 255, 0.03);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --primary-neon: #064e3b;
+      --accent-neon: #34d399;
+      --text-main: #f4f4f5;
+      --text-muted: #a1a1aa;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: sans-serif, -apple-system, sans-serif;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+    
+    .glow-header {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 20px;
+    }
+    
+    .logo-glow {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #fff;
+      text-decoration: none;
+      background: linear-gradient(135deg, #fff, var(--accent-neon));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+    
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 28px;
+      font-size: 0.98rem;
+      font-weight: 700;
+      transition: color 0.3s, text-shadow 0.3s;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent-neon);
+      text-shadow: 0 0 8px var(--accent-neon);
+    }
+    
+    .hero-glow {
+      padding: 140px 20px 100px;
+      text-align: center;
+      background: radial-gradient(circle at top, var(--primary-neon) 0%, transparent 75%);
+      position: relative;
+    }
+    
+    .hero-glow h1 {
+      font-size: 3.2rem;
+      font-weight: 900;
+      margin-bottom: 24px;
+      letter-spacing: -0.06em;
+      line-height: 1.25;
+    }
+    
+    .gradient-txt {
+      background: linear-gradient(135deg, #fff, var(--accent-neon));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    }
+    
+    .hero-glow p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 750px;
+      margin: 0 auto 35px;
+    }
+    
+    .phone-bar {
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.04), transparent);
+      padding: 18px;
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+      border-radius: 8px;
+      margin: 25px auto;
+      max-width: 600px;
+      font-size: 1.4rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+      text-align: center;
+    }
+    
+    .phone-bar a {
+      color: var(--accent-neon);
+      text-decoration: none;
+      transition: text-shadow 0.3s;
+    }
+    
+    .phone-bar a:hover {
+      text-shadow: 0 0 10px var(--accent-neon);
+    }
+    
+    .neon-btn {
+      display: inline-block;
+      padding: 15px 36px;
+      background: linear-gradient(135deg, var(--primary-neon), var(--accent-neon));
+      color: white;
+      text-decoration: none;
+      font-weight: 800;
+      border-radius: 9999px;
+      box-shadow: 0 4px 22px rgba(236, 72, 153, 0.35);
+      transition: all 0.3s ease;
+      letter-spacing: 0.03em;
+    }
+    
+    .neon-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.65);
+    }
+    
+    .sec-wrap {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    
+    .glass-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 45px;
+      backdrop-filter: blur(10px);
+      margin-bottom: 45px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    }
+    
+    .glass-box h2 {
+      font-size: 2.2rem;
+      font-weight: 900;
+      margin-bottom: 28px;
+      color: #fff;
+      border-left: 5px solid var(--accent-neon);
+      padding-left: 20px;
+      letter-spacing: -0.04em;
+    }
+    
+    .glass-box p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      text-align: justify;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+      margin-top: 36px;
+    }
+    
+    .mini-card {
+      background: rgba(255, 255, 255, 0.015);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .mini-card:hover {
+      border-color: var(--accent-neon);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+    }
+    
+    .mini-card h3 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 14px;
+      letter-spacing: -0.02em;
+    }
+    
+    .mini-card p {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      margin-bottom: 0;
+    }
+    
+    .premium-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 30px 0;
+      color: var(--text-main);
+    }
+    
+    .premium-table th {
+      background: rgba(255,255,255,0.03);
+      padding: 16px;
+      border-bottom: 2px solid var(--border-color);
+      font-weight: 800;
+      text-align: left;
+    }
+    
+    .premium-table td {
+      padding: 16px;
+      border-bottom: 1px solid var(--border-color);
+      font-size: 1.05rem;
+    }
+    
+    .premium-table tbody tr:hover {
+      background: rgba(255,255,255,0.01);
+    }
+    
+    .ugc-review {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 24px;
+    }
+    
+    .reviewer-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.88rem;
+      color: var(--accent-neon);
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    .reviewer-text {
+      font-size: 1.02rem;
+      color: var(--text-main);
+      font-style: italic;
+    }
+    
+    footer {
+      background: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid var(--border-color);
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+    
+    footer p {
+      margin-bottom: 12px;
+    }
+    
+    footer a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 700;
+      transition: color 0.3s;
+    }
+    
+    footer a:hover {
+      color: var(--accent-neon);
+    }
+    
+    @media(max-width: 768px) {
+      .hero-glow h1 {
+        font-size: 2.3rem;
       }
-      body { background: var(--bg); color: var(--fg); font-family: 'Noto Serif KR', serif; line-height: 1.8; }
-      header { border-bottom: 1px solid var(--border); padding: 20px 0; }
-      .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
-      .hero { padding: 80px 0; text-align: left; border-bottom: 1px solid var(--border); }
-      .hero h1 { font-size: 3rem; font-weight: 400; color: var(--fg); margin-bottom: 24px; letter-spacing: -0.03em; }
-      .btn { display: inline-block; padding: 12px 36px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s; }
-      .btn:hover { background: var(--accent); color: #fff; }
-      .content-section { padding: 60px 0; }
-      .card { border-bottom: 1px solid var(--border); padding: 32px 0; }
-      .card h3 { font-size: 1.4rem; font-weight: 500; margin-bottom: 12px; }
-      .review-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 40px; }
-      .review-card { border: 1px solid var(--border); padding: 24px; background: #fff; }
-    
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 2px solid var(--border); }
-    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
-    th { background: rgba(0,0,0,0.02); font-weight: bold; }
-    header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
-    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
-    nav a:hover { color: var(--accent); }
-    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; }
-    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
-    footer a:hover { color: var(--accent); }
-    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
-    .p-bar a { color: #fff; text-decoration: underline; }
+      .nav-links {
+        display: none;
+      }
+      .glass-box {
+        padding: 28px;
+      }
+      .premium-table {
+        font-size: 0.9rem;
+      }
+    }
+  
   </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "마포 마사지 상세정보",
+      "url": "https://t3b06-mp-massage-link-2.pages.dev/about.html",
+      "description": "마포 마사지의 상세 위치, 이용 프로세스 및 예약 가격 안내."
+    }
+  </script>
 </head>
 <body>
-  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
-  <header>
-    <div class="container">
-      <a href="index.html" class="logo">마포.마사지</a>
-      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a></nav>
+
+  <header class="glow-header">
+    <div class="nav-container">
+      <a href="index.html" class="logo-glow">마포 마사지 포털</a>
+      <nav class="nav-links">
+        <a href="index.html">홈</a>
+        <a href="about.html">상세정보</a>
+        <a href="blog.html">블로그</a>
+      </nav>
     </div>
   </header>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>오시는 길 &amp; 투명한 가격 안내</h1>
-        <p style="font-size:1.25rem; opacity:0.9;">형이 직접 엄선한 최강의 코스 라인업과 100% 실명 정찰제 가격 테이블</p>
-      </div>
-    </section>
-    
-    <section class="content-section">
-      <div class="container">
-        <div class="card">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 샵을 직접 엄선하고 관리하게 된 리얼 스토리</h2>
-          <p style="font-size:1.1rem; line-height:1.9; margin-bottom:20px;">형이 이 마사지 정보 큐레이션을 시작하게 된 스토리는 진짜 눈물 없이 들을 수 없다. 나도 한때는 야근에 찌든 평범한 직장인이었는데, 마포 역세권 근처에서 힐링 좀 해보겠다고 퇴근하고 마사지 샵 문을 두드렸다가 내상 입고 나온 날이 한두 번이 아니었음. 마사지는 커녕 대충 오일만 문지르다 끝나는 데서 돈 10만 원 날리면 진짜 세상이 무너지는 기분이다. 그래서 내가 아예 발로 뛰어서 이 바닥 진짜들만 모아놓은 네트워크를 구축해 버린 거임. 010-6279-0862로 문의하면 실패할 확률 제로에 가깝다.</p>
-        </div>
 
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">100% 투명 정찰제 요금표</h2>
-          <p style="font-size:1.05rem; color:var(--muted); margin-bottom:15px;">※ 카드로 결제하시든 현금으로 결제하시든 예약 특가 그대로 완벽 적용됩니다. 추가요금 요구 시 형이 전액 환불해 줌.</p>
-          
-        <table>
+  <section class="hero-glow">
+    <h1><span class="gradient-txt">DETAILED INFO</span> 상세 정보</h1>
+    <p>마포 로컬로서 형들이 헛돈 쓰는 일 절대 없도록 확실한 랜드마크와 투명 주종 가격을 공개합니다.</p>
+    <div class="phone-bar">
+      📞 실시간 직통 전화: <a href="tel:010-6279-0862">010-6279-0862</a>
+    </div>
+  </section>
+
+  <main class="sec-wrap">
+    <div class="glass-box">
+      <h2>스토리 & 이용 동기</h2>
+      <p>형이 마사지 포털을 본격적으로 구축하게 된 사연은 진짜 눈물 없이 들을 수 없다. 나도 옛날엔 매일 밤샘 야근에 목이랑 어깨가 뻐근하게 결리던 평범한 직장인이었는데, 마포 근처에서 피로 좀 시원하게 풀어볼까 하고 찾아갔다가 성의 없는 엉터리 관리사 만나서 마사지는 개뿔 온몸에 멍만 잔뜩 들고 돈 10만 원 넘게 털리고 나온 쓰라린 내상이 한두 번이 아니었음. 그때 피눈물 흘리며 다짐했지. 내 동생들은 절대 이 바닥에서 눈탱이 안 맞고 최고의 극진한 VIP 힐링 대우만 받게 하겠다고. 그렇게 내가 직접 매장 매니저들 퀄리티 검증하고 가성비 깎아내서 만든 직통 단골 예약 창구가 바로 010-6279-0862다. 형 믿고 연락하면 안전 그 자체임.</p>
+    </div>
+
+    <div class="glass-box">
+      <h2>상세 위치 시그널 & 인프라</h2>
+      <p>📌 입지 및 프리미엄 접근성 안내: 마포 핵심 역세권 출구에서 걸어서 단 3분 거리에 있는 최고급 상업 빌딩 내에 세련되게 자리 잡고 있어서 찾아오기 개사기 수준으로 편함. 넓고 쾌적한 전용 주차 공간 완비되어 있어 자차 이용 손님도 주차 스트레스 제로이며, 프라이빗 1인 전용 샤워실과 이태리식 프리미엄 아로마 오일 라인업으로 완전 차별화된 럭셔리함을 자부한다.</p>
+    </div>
+
+    <div class="glass-box">
+      <h2>투명 정찰 가격표</h2>
+      <p>애초에 빌지 장난을 원천 차단하기 위해 주종 및 시간 코스 견적을 명확히 고시합니다.</p>
+      
+        <table class="premium-table">
           <thead>
-            <tr><th>코스 분류</th><th>시간</th><th>정상가</th><th>예약 특가 (010-6279-0862)</th></tr>
+            <tr><th>테라피 코스</th><th>시간</th><th>정상가</th><th>예약 할인가 (010-6279-0862)</th></tr>
           </thead>
           <tbody>
-            <tr><td>정통 아로마 림프테라피 A</td><td>60분</td><td>110,000원</td><td><strong>90,000원</strong></td></tr>
-            <tr><td>딥스웨디시 스페셜 B</td><td>80분</td><td>140,000원</td><td><strong>120,000원</strong></td></tr>
-            <tr><td>VIP 올인원 풀케어 C</td><td>100분</td><td>180,000원</td><td><strong>150,000원</strong></td></tr>
+            <tr><td>정통 아로마 림프테라피 A코스</td><td>60분</td><td>110,000원</td><td><strong>90,000원</strong></td></tr>
+            <tr><td>딥스웨디시 스페셜 B코스</td><td>80분</td><td>140,000원</td><td><strong>120,000원</strong></td></tr>
+            <tr><td>VIP 최고급 전신 시그니처 C코스</td><td>100분</td><td>180,000원</td><td><strong>150,000원</strong></td></tr>
           </tbody>
         </table>
       
-          <div style="margin-top:30px; text-align:center;">
-            <a href="tel:010-6279-0862" class="btn">실시간 견적 및 즉시 예약: 📞 010-6279-0862</a>
-          </div>
-        </div>
-
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">상세 위치 시그널 및 시설 안내</h2>
-          <p style="font-size:1.1rem; line-height:1.9;">주요 위치 시그널: 마포역 도보 3분 거리 초역세권 및 인근 주요 빌딩 바로 뒤편에 위치해 있어서 접근성 개사기임. 주차장 완비되어 있어서 자차 끌고 와도 주차 스트레스 전혀 없고, 샤워실도 1인 개인 샤워실로 완전 고급스럽게 세팅되어 있어서 프라이빗함 끝판왕이다.</p>
-        </div>
-
-        <div style="margin-top:60px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">단골 고객 추천 실시간 찐소감</h2>
-          <div class="review-grid">
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>최강현</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">샤워실이 진짜 깨끗하고 개별 룸 안에 다 있어서 너무 편해요. 이 가격에 이 정도 서비스면 진짜 혜자라고 봅니다.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-20</small>
     </div>
-  
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>정우진</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
+
+    <div class="glass-box">
+      <h2>자주 묻는 질문 (FAQ)</h2>
+      <div style="margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 20px;">
+        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 예약 없이 바로 매장으로 가도 되나요?</h4>
+        <p style="color: var(--text-muted); font-size: 1rem;">A. 주말이나 피크 타임에는 룸이 풀로 차서 워크인으로 오시면 대기 시간이 2~3시간씩 걸리거나 헛걸음하기 쉽습니다. 형들의 골든타임을 사수하고 실시간 대기실 가동 룸을 확보하기 위해 오시기 최소 30분 전 010-6279-0862 예약센터로 전화 한 통만 때려주시길 정중히 권합니다!</p>
       </div>
-      <p style="font-size:0.9rem; color:var(--muted);">지역 랜드마크 설명 듣고 가니 찾아가기 개쉽네요. 번호 저장해 두고 주말마다 연락드릴게요 실장님!</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-24</small>
-    </div>
-  </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div>&copy; 2026 마포 마사지 스페셜 가이드. All Rights Reserved.</div>
       <div>
-        <a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a>
+        <h4 style="color: var(--accent-neon); margin-bottom: 10px;">Q. 정찰가 외에 현장 빌지 추가금 청구가 있나요?</h4>
+        <p style="color: var(--text-muted); font-size: 1rem;">A. 단 10원짜리 하나도 허위나 부가 요금을 추가 청구하지 않습니다. 예약 단계에서 합의된 정찰 요금 그대로 카드/현금 깔끔 정산 마감해 드리니 눈탱이 걱정은 싹 접어두셔도 좋습니다!</p>
       </div>
     </div>
+  </main>
+
+  <footer>
+    <p><strong>마포 마사지 찐후기 가이드 포털</strong></p>
+    <p>주소: 서울특별시 마포구 일대 | 연락처: 010-6279-0862</p>
+    <p>
+      <a href="index.html">홈</a> | 
+      <a href="about.html">상세정보</a>
+      | <a href="blog.html">블로그</a>
+    </p>
+    <p style="margin-top: 16px; opacity: 0.5;">&copy; 2026 마포 마사지 Portal. All Rights Reserved. 본 사이트는 성인 전용 정보 포털입니다.</p>
   </footer>
+
 </body>
 </html>
