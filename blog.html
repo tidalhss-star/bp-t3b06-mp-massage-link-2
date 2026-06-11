@@ -1,72 +1,248 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>마포 마사지 꿀팁 가이드 칼럼 | 마포 마사지 링크</title>
-  <meta name="description" content="마포 일대 마사지 이용 시 지갑을 지키는 3대 전략 리포트.">
-  <meta name="bpaas-design-system" content="editorial-luxury">
-  <meta name="bpaas-design-theme" content="kr-editorial-luxury">
-  <style>
-    :root {
-      --bg-editorial: #121212;
-      --card-editorial: #1c1c1c;
-      --border-editorial: #2d261e;
-      --accent-editorial: #c5a880;
-      --text-main: #f0eae1;
-      --text-muted: #9f9689;
-    }
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body { background-color: var(--bg-editorial); color: var(--text-main); font-family: 'Playfair Display', 'Georgia', serif; line-height: 1.85; padding: 0 40px; }
-    .editorial-wrapper { max-width: 720px; margin: 0 auto; padding: 90px 0; }
-    header.editorial-header { border-bottom: 1px solid var(--border-editorial); padding-bottom: 25px; margin-bottom: 70px; text-align: center; }
-    .editorial-logo { font-size: 2.2rem; font-weight: 700; color: #fff; text-decoration: none; font-style: italic; letter-spacing: -0.02em; }
-    .editorial-nav { margin-top: 20px; display: flex; justify-content: center; gap: 35px; }
-    .editorial-nav a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
-    .editorial-nav a:hover { color: var(--accent-editorial); }
-    .editorial-title { font-size: 3.4rem; font-weight: 800; text-align: center; color: #fff; line-height: 1.2; margin-bottom: 40px; letter-spacing: -0.04em; }
-    .editorial-divider { height: 1px; background-color: var(--border-editorial); margin: 40px 0; }
-    .editorial-story { font-size: 1.15rem; text-align: justify; letter-spacing: 0.02em; margin-bottom: 50px; }
-    .editorial-story p { margin-bottom: 30px; text-indent: 10px; }
-    .editorial-story p::first-letter { font-size: 2.6rem; font-weight: 900; float: left; margin: 5px 8px 0 0; color: var(--accent-editorial); }
-    .editorial-phone-box { background-color: var(--card-editorial); border: 1px solid var(--border-editorial); padding: 35px; text-align: center; margin-bottom: 55px; }
-    .editorial-phone-box p { font-size: 1.1rem; color: var(--text-muted); margin-bottom: 15px; font-style: italic; }
-    .editorial-phone-link { display: inline-block; font-size: 1.8rem; font-weight: 700; color: var(--accent-editorial); text-decoration: none; transition: color 0.3s; }
-    .editorial-phone-link:hover { color: #fff; }
-    .editorial-review-card { border-bottom: 1px dashed var(--border-editorial); padding: 25px 0; margin-bottom: 20px; }
-    .editorial-review-meta { display: flex; justify-content: space-between; font-size: 0.85rem; color: var(--accent-editorial); font-weight: 600; margin-bottom: 10px; }
-    .editorial-review-text { font-style: italic; font-size: 1.05rem; }
-    footer.editorial-footer { border-top: 1px solid var(--border-editorial); padding-top: 45px; margin-top: 90px; text-align: center; font-size: 0.85rem; color: var(--text-muted); }
-    footer.editorial-footer a { color: var(--text-muted); text-decoration: none; margin: 0 15px; }
-    footer.editorial-footer a:hover { color: var(--accent-editorial); }
-    @media(max-width:768px) {
-      body { padding: 0 20px; }
-      .editorial-title { font-size: 2.1rem; }
-      .editorial-logo { font-size: 1.6rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta name="description" content="마포에서 제일 쫀쫀한 마사지, 마포 마사지 링크. 형, 진짜 잘 못 찾아왔어. 010-6279-0862로 바로 콜!">
+    <meta name="keywords" content="마포 마사지, 마포 마사지 링크, 마포 스웨디시, 홍대 마사지, 합정 마사지, 마포구 마사지">
+    <link rel="canonical" href="https://t3b06-mp-massage-link-2.vercel.app/blog">
+    <title>블로그 — 마포 마사지 링크</title>
+    <meta property="og:title" content="블로그 — 마포 마사지 링크">
+    <meta property="og:description" content="마포에서 제일 쫀쫀한 마사지, 마포 마사지 링크. 형, 진짜 잘 못 찾아왔어. 010-6279-0862로 바로 콜">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://t3b06-mp-massage-link-2.vercel.app/blog">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="블로그 — 마포 마사지 링크">
+    <meta name="twitter:description" content="마포에서 제일 쫀쫀한 마사지, 마포 마사지 링크. 형, 진짜 잘 못 찾아왔어. 010-6279-0862로 바로 콜">
+    <style>
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Helvetica Neue', Arial, sans-serif; 
+            background: #0a0a0a; 
+            color: #e0e0e0; 
+            line-height: 1.6; 
+            -webkit-font-smoothing: antialiased;
+        }
+        a { color: #ff00ff; text-decoration: none; }
+        a:hover { color: #00ffcc; }
+        ::selection { background: #ff00ff; color: #000; }
+
+        /* 전체 풀블리드 레이아웃 */
+        .wrapper { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 0 20px; 
+        }
+
+        /* SPACE: airy */
+        .section-gap { 
+            height: 60px; 
+        }
+
+        /* TYPOGRAPHY */
+        h1, h2, h3, h4 { 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 0.05em; 
+        }
+        h1 { 
+            font-size: 2.8rem; 
+            margin-bottom: 0.5rem; 
+            color: #fff; 
+            text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffcc;
+        }
+        h2 { 
+            font-size: 2rem; 
+            margin-bottom: 0.5rem; 
+            border-left: 6px solid #ff00ff; 
+            padding-left: 15px; 
+        }
+        h3 { 
+            font-size: 1.4rem; 
+            margin-bottom: 0.3rem; 
+        }
+        p, li, .text-block { 
+            font-size: 1rem; 
+            margin-bottom: 1rem; 
+        }
+        .text-block { 
+            background: rgba(255, 0, 255, 0.05); 
+            padding: 20px; 
+            border: 2px solid #ff00ff; 
+            border-radius: 4px; 
+        }
+
+        /* BUTTONS & LINKS */
+        .btn { 
+            display: inline-block; 
+            padding: 12px 28px; 
+            background: #ff00ff; 
+            color: #000; 
+            font-weight: bold; 
+            text-transform: uppercase; 
+            border: 2px solid #fff; 
+            transition: 0.2s; 
+            cursor: pointer; 
+        }
+        .btn:hover { 
+            background: #00ffcc; 
+            color: #000; 
+            border-color: #ff00ff; 
+        }
+
+        /* NAV 공통 */
+        .nav { 
+            background: #121212; 
+            border-bottom: 3px solid #ff00ff; 
+            padding: 15px 0; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+        }
+        .nav ul { 
+            list-style: none; 
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            flex-wrap: wrap; 
+        }
+        .nav ul li a { 
+            font-weight: bold; 
+            font-size: 1.1rem; 
+            padding: 8px 12px; 
+            border: 2px solid transparent; 
+            transition: 0.2s; 
+        }
+        .nav ul li a:hover { 
+            border-color: #ff00ff; 
+            background: rgba(255, 0, 255, 0.1); 
+        }
+
+        /* 햄버거 메뉴 (기본 모바일) */
+        .nav-toggle { 
+            display: none; 
+            background: none; 
+            border: none; 
+            color: #fff; 
+            font-size: 2rem; 
+            cursor: pointer; 
+            padding: 10px; 
+        }
+        @media (max-width: 768px) {
+            .nav ul { 
+                display: none; 
+                flex-direction: column; 
+                align-items: center; 
+                gap: 10px; 
+                padding: 20px 0; 
+            }
+            .nav ul.active { 
+                display: flex; 
+            }
+            .nav-toggle { 
+                display: block; 
+                text-align: center; 
+            }
+        }
+
+        /* TEL 링크 강조 */
+        .tel-link { 
+            color: #00ffcc; 
+            font-size: 1.5rem; 
+            font-weight: bold; 
+            text-decoration: underline wavy #ff00ff; 
+            display: inline-block; 
+            margin: 10px 0; 
+        }
+        .tel-link:hover { 
+            color: #ff00ff; 
+            text-decoration-color: #00ffcc; 
+        }
+
+        /* FOOTER */
+        .footer { 
+            background: #0d0d0d; 
+            border-top: 2px solid #ff00ff; 
+            padding: 30px 0; 
+            text-align: center; 
+            font-size: 0.9rem; 
+        }
+
+        /* 반응형 이미지/미디어 */
+        img { max-width: 100%; height: auto; }
+        .blog-card { 
+            background: #1a1a1a; 
+            border: 2px solid #333; 
+            padding: 30px; 
+            margin-bottom: 30px; 
+        }
+        .blog-card h2 { margin-top: 0; }
+        .blog-card .meta { 
+            color: #aaa; 
+            font-size: 0.85rem; 
+            margin-bottom: 15px; 
+        }
+        .blog-card .btn { margin-top: 10px; }
+    </style>
 </head>
 <body>
-  <div class="editorial-wrapper">
-    <header class="editorial-header">
-      <a href="index.html" class="editorial-logo">THE 마포 LIFESTYLE</a>
-      <nav class="editorial-nav">
-        <a href="index.html">홈</a>
-        <a href="about.html">소개</a>
-        <a href="blog.html">블로그</a>
-      </nav>
+
+    <!-- 네비게이션 -->
+    <nav class="nav" role="navigation">
+        <button class="nav-toggle" aria-label="메뉴 열기" onclick="document.querySelector('.nav ul').classList.toggle('active')">☰</button>
+        <ul>
+            <li><a href="/">홈</a></li>
+            <li><a href="/about">소개</a></li>
+            <li><a href="/services">서비스</a></li>
+            <li><a href="/blog">블로그</a></li>
+            <li><a href="/contact">문의</a></li>
+        </ul>
+    </nav>
+
+    <!-- 헤더 -->
+    <header style="padding: 40px 0 20px; text-align: center;">
+        <div class="wrapper">
+            <h1>블로그</h1>
+            <p class="text-block" style="max-width: 700px; margin: 0 auto;">
+                형, 진짜 마사지 잘 받는 법부터 꿀팁까지 다 모았어. 
+                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>로 바로 전화해도 되고, 아래 글 읽고 결정해.
+            </p>
+        </div>
     </header>
-    <main>
-      <h1 class="editorial-title">마포 마사지 스페셜 정보 리포트</h1>
-      <article class="editorial-story">
-        <p>오일 아로마 테라피 마사지와 정통 타이 건식 스포츠 케어의 의학적, 해부학적 원리와 차이점을 정교하게 분석해서 자기 피로 상태에 가장 잘 맞는 힐링 코스를 맞춤 셀프 가이드하는 실전 꿀팁이다 브로. 심신의 림프 혈행 개선, 대뇌 신경 안정, 그리고 근육 통증 해소가 필요할 때는 고순도 아로마 릴렉싱 코스를, 뼈 정렬 교정과 묵직한 하체 근막 심부 스트레칭 압박이 급할 때는 스포츠 건식을 추천한다. 현장에서 추가 코스 유입 Billing 트러블 마찰을 무상 차단하고 싶다면 무조건 형의 예약 핫라인 📞 010-6279-0862 로 사전 정찰 견적을 확실히 확보하고 가라 브로!</p>
-        <p>로컬 핫플레이스를 이용하기 전에 확실한 예약 경로를 선점하고 지갑 버퍼를 단단히 방어해서 쾌적한 도파민 샤워를 쟁취하길 바란다 브로. 형의 단골 번호 📞 <a href="tel:01062790862" style="color:var(--accent-editorial); font-weight:700;">010-6279-0862</a>는 언제나 24시간 열려 있으니 편할 때 신호를 때려라 브로!</p>
-      </article>
-    </main>
-    <footer class="editorial-footer">
-      <p>주소: 서울특별시 마포 일대 | 연락처: 010-6279-0862</p>
-      <p style="margin-top:20px; opacity:0.4;">&copy; 2026 마포 마사지 Portal. All Rights Reserved.</p>
-    </footer>
-  </div>
+
+    <div class="wrapper">
+        <div class="section-gap"></div>
+
+        <!-- 블로그 글 1편 -->
+        <article class="blog-card">
+            <h2>마포에서 진짜 마사지 잘하는 곳 찾는 꿀팁 (feat. 내가 다 돌아본 후기)</h2>
+            <div class="meta">
+                <span>✍️ 작성자: 마포사랑</span> · 
+                <span>📅 2025.02.15</span> · 
+                <span>🏷️ 마포 마사지, 꿀팁, 후기</span>
+            </div>
+            <p>야, 형. 나 원래 마사지 같은 거 잘 안 믿었거든. '그냥 주물러주는 거지 뭐' 싶었어. 근데 어느 날 허리가 아파 죽겠는 거야. 컴퓨터만 하루 12시간 하니까 척추가 삐걱거리더라고. 그래서 동생이 추천해준 곳이 있었는데… 그게 바로 <strong>마포 마사지 링크</strong>였어.</p>
+            <p>처음에 전화했을 때부터 뭔가 달랐어. "형, 진짜 잘 못 찾아왔어" 이러면서 받더라고. ㅋㅋ 농담 섞인 말투에 긴장 풀리고, 바로 예약했지. 가보니까 완전 브루탈리스트 인테리어에 조명은 네온 바이올렛. 약간 클럽 느낌 나면서도 되게 차분했어.</p>
+            <p>관리사분이 손만 대도 아픈 부위를 척척 찾아내더라고. 90분 동안 거의 잤어. 진짜 개운해서 깨니까 몸이 새로 태어난 기분이었어. 그 뒤로 나는 여기 단골 됐다, 형. 그리고 내가 발견한 꿀팁 하나 알려줄게.</p>
+            <p><strong>꿀팁 1:</strong> 전화할 때 "블로그 보고 왔어요" 하면 서비스로 발마사지 10분 더 해준다? 나만 알고 있어. ㅋㅋ<br>
+            <strong>꿀팁 2:</strong> 저녁 7시 이후는 예약이 거의 꽉 차니까 오후 2~4시 사이에 가는 게 젤 좋아. 조용하고 관리사분도 여유 있게 해줘.<br>
+            <strong>꿀팁 3:</strong> 스웨디시 받을 거면 꼭 샤워하고 가. 오일이 피부에 완전 스며들어서 효과 두 배야.</p>
+            <p>아, 그리고 요즘 새로 생긴 코스가 있는데, '마포 스웨디시 + 아로마 테라피' 합체 코스야. 가격은 12만원인데 120분짜리. 진짜 가성비 미친다. 나도 다음 달에 또 예약해놨어.</p>
+            <p>형도 한 번 가봐. 후회 안 할 자신 있어. 망설이지 말고 지금 바로 <a href="tel:01062790862" class="tel-link">010-6279-0862</a>로 전화해. "형, 진짜 잘 못 찾아왔어" 듣는 순간 이미 반은 간 거야.</p>
+            <a href="tel:01062790862" class="btn">📞 전화 걸기</a>
+        </article>
+
+        <div class="section-gap"></div>
+
+        <!-- 부가 정보: FAQ 형식 + 전화 유도 -->
+        <section class="text-block" style="margin-bottom: 40px;">
+            <h3>자주 묻는 질문 (FAQ)</h3>
+            <p><strong>Q:</strong> 예약 없이 방문해도 돼?<br>
+            <strong>A:</strong> 가능은 한데, 웨이팅 길면 1시간까지 있어. 전화 미리 하는 게 훨씬 편해. 010-6279-0862.</p>
+            <p><strong>Q:</strong> 마사지 받고 운동해도 되나?<br>
+            <strong>A:</strong> 당일은 가볍게 스트레
 </body>
 </html>
