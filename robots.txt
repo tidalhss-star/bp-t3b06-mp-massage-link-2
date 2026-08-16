@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://t3b06-mp-massage-link-2.maphoshirts.com/sitemap.xml
-Sitemap: https://t3b06-mp-massage-link-2.maphoshirts.com/sitemap-pages.xml
+Sitemap: https://mapo-care-choice.maphoshirts.com/sitemap.xml
+Sitemap: https://mapo-care-choice.maphoshirts.com/sitemap-pages.xml
